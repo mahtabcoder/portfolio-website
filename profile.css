@@ -1,0 +1,876 @@
+@charset "UTF-8";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden; /* extra horizontal scroll hatao */
+}
+.rating i {
+  color: gold;       /* ya koi bhi color like #FFD700, red, blue */
+  font-size: 24px;   /* size bhi control kar sakte ho */
+  cursor: pointer;   /* hover karne par pointer ban jaye */
+}
+.mini_baar {
+  background-color: #25D366 !important; /* WhatsApp green */
+  color: white;  /* Text visible rahe */
+  font-weight: bold;
+  text-align: center;
+}
+.pr_code{
+  height: 35px;
+  width: 70%;
+  background-color: #ccc;
+  border: none;
+  outline: none;
+  border-radius: 6px;
+  color: #25D366;
+  padding: 5px 10px;
+}
+.pr_submit_btn{
+  margin-top: 10px;
+  width: 70%;
+  height: 30px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  background-color: white;
+}
+.pr_submit_btn:hover {
+  background-color: #25D366;
+  color: white;
+} 
+.skip{
+  width: 50%;
+  height: 25px;
+  border: none;
+  outline: none;
+  border-radius: 6px;
+  background-color: white;
+}
+.skip:hover {
+  background-color: #25D366;
+  color: white;
+}
+.profile_idno {
+  max-width: 350px;
+  margin: 20px auto;
+  padding: 15px 20px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(10px);
+  border: 2px solid rgba(255, 255, 255, 0.15);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+/* Profile Card */
+.profile_card {
+  max-width: 350px;
+  margin: 20px auto;
+  padding: 15px 20px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(10px);
+  border: 2px solid rgba(255, 255, 255, 0.15);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.profile_card2{
+  max-width: 350px;
+  margin: 20px auto;
+  padding: 15px 20px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(10px);
+  border: 2px solid rgba(255, 255, 255, 0.15);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+
+
+  .silvar {
+  width: 30%;
+  height: 80%;
+  margin: 20px 10px;
+  padding: 20px 25px;
+  border-radius: 18px;
+  color: #fff;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+
+  /* Animated Neon Gradient */
+  background: 
+    linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)),
+    linear-gradient(270deg, #ff00c3, #7928ca, #00eaff, #00ff87) border-box;
+  background-size: 300% 300%;
+  animation: moveGradient 6s ease infinite;
+
+  border: 2px solid transparent;
+  background-clip: padding-box;
+
+  /* Glow Effect */
+  box-shadow: 0 0 25px rgba(0, 255, 200, 0.4),
+              0 0 45px rgba(255, 0, 195, 0.4);
+  transition: all 0.4s ease;
+}
+
+/* Hover Effect */
+.silvar:hover {
+  transform: translateY(-10px) scale(1.03);
+  box-shadow: 0 0 40px rgba(255, 0, 195, 0.7),
+              0 0 70px rgba(0, 255, 200, 0.7);
+}
+
+/* Animation Keyframes */
+@keyframes moveGradient {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+
+
+
+
+
+  .gold {
+  width: 30%;
+  height: 80%;
+  margin: 20px 10px;
+  padding: 20px 25px;
+  border-radius: 18px;
+  color: #fff;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+
+  /* Animated Neon Gradient */
+  background: 
+    linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)),
+    linear-gradient(270deg, #ff00c3, #7928ca, #00eaff, #00ff87) border-box;
+  background-size: 300% 300%;
+  animation: moveGradient 6s ease infinite;
+
+  border: 2px solid transparent;
+  background-clip: padding-box;
+
+  /* Glow Effect */
+  box-shadow: 0 0 25px rgba(0, 255, 200, 0.4),
+              0 0 45px rgba(255, 0, 195, 0.4);
+  transition: all 0.4s ease;
+}
+
+/* Hover Effect */
+.gold:hover {
+  transform: translateY(-10px) scale(1.03);
+  box-shadow: 0 0 40px rgba(255, 0, 195, 0.7),
+              0 0 70px rgba(0, 255, 200, 0.7);
+}
+
+/* Animation Keyframes */
+@keyframes moveGradient {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+
+.primiam {
+  width: 30%;
+  height: 80%;
+  margin: 20px 10px;
+  padding: 20px 25px;
+  border-radius: 18px;
+  color: #fff;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+
+  /* Animated Neon Gradient */
+  background: 
+    linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)),
+    linear-gradient(270deg, #ff00c3, #7928ca, #00eaff, #00ff87) border-box;
+  background-size: 300% 300%;
+  animation: moveGradient 6s ease infinite;
+
+  border: 2px solid transparent;
+  background-clip: padding-box;
+
+  /* Glow Effect */
+  box-shadow: 0 0 25px rgba(0, 255, 200, 0.4),
+              0 0 45px rgba(255, 0, 195, 0.4);
+  transition: all 0.4s ease;
+}
+
+/* Hover Effect */
+.primiam:hover {
+  transform: translateY(-10px) scale(1.03);
+  box-shadow: 0 0 40px rgba(255, 0, 195, 0.7),
+              0 0 70px rgba(0, 255, 200, 0.7);
+}
+
+/* Animation Keyframes */
+@keyframes moveGradient {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+
+
+
+
+
+
+.plaan {
+  display: flex;              /* Horizontal layout */
+  justify-content: center;    /* Center align horizontally */
+  align-items: stretch;       /* Same height cards */
+  gap: 20px;                  /* Space between cards */
+  flex-wrap: wrap;            /* Small screen par niche shift ho */
+  padding: 20px;
+  background-color: #93c5fd; 
+
+}
+
+
+
+
+/* Row (icon + input) */
+.profil_add_row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(255,255,255,0.1);
+  padding: 8px 12px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.profil_add_row:hover {
+  background: rgba(255,255,255,0.15); /* hover pe thoda highlight */
+  transform: translateX(5px);
+}
+
+/* Icons */
+.profil_add_row i {
+  font-size: 20px;
+  color: #00ffcc;
+  flex-shrink: 0;
+}
+
+/* Input fields */
+.profil_add_row input {
+  flex: 1;
+  border: none;
+  outline: none;
+  background: transparent;
+  color: #fff;
+  font-size: 15px;
+  padding: 4px 6px;
+}
+
+.profil_add_row input::placeholder {
+  color: rgba(255,255,255,0.6);
+}
+
+
+/* hover effect (optional) */
+.rating i:hover {
+  color: orange;
+}
+
+
+.profil_baar{
+  width: 90%;
+}
+
+
+
+.coder_img{
+  width: 50px;
+  height: 50px;
+  border-radius: 10%;
+}
+.f1 {
+  color: #1DA1F2; /* Twitter Blue */
+  margin: 0 20px; /* horizontal gap */
+  font-size: 33px; /* size bada karna ho to */
+  cursor: pointer;
+
+}
+
+.f2 {
+  color: #FF0000; /* YouTube Red */
+  margin: 0 20px; /* horizontal gap */
+  font-size: 33px; /* size bada karna ho to */
+  cursor: pointer;
+}
+
+.f3 {
+  color: #1877F2; /* Facebook Blue */
+  margin: 0 20px; /* horizontal gap */
+  font-size: 33px; /* size bada karna ho to */
+  cursor: pointer;
+}
+
+.f4 {
+  color: #25D366; /* WhatsApp Green */
+  margin: 0 20px; /* horizontal gap */
+  font-size: 33px; /* size bada karna ho to */
+  cursor: pointer;
+}
+
+.f5 {
+  color: #E4405F; /* Instagram Pink/Red */
+  margin: 0 20px; /* horizontal gap */
+  font-size: 33px; /* size bada karna ho to */
+  cursor: pointer;
+}
+
+.redio_btn .form-check-input:focus {
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important; /* Bootstrap ka default blue shadow hat jayega */
+}
+
+.drop_maneu select,
+.drop_maneu button,
+.drop_maneu input {
+  margin-top: 5px;
+  margin-right: 7px;
+  width: 50%;
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important; /* bootstrap ka blue shadow bhi hat jayega */
+}
+
+
+.container-fluid {
+  display: flex;
+  margin: 0 !important;
+  padding: 0 !important;
+  width: 100%;
+}
+.drop_maneu{
+  margin-top: -45px;
+}
+
+/* ________ Outer Profile Container ________ */
+.profile_desing {
+  width: 25%;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+
+  border: 4px solid transparent;
+  border-radius: 12px;
+
+  /* Background with blur + transparent black overlay */
+  background: 
+    linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
+    linear-gradient(270deg, #ff6b6b, #5f27cd, #1dd1a1) border-box;
+
+  background-size: 200% 200%;
+  animation: move 4s linear infinite;
+
+  /* Blur effect */
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+
+  /* Light effect on border */
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.6);
+
+  /* Flexbox center for inner card */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Border animation */
+@keyframes move {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+
+/* ________ Inner Profile Card ________ */
+.profile_desing2 ,.profile_desing3{
+  width: 300px;
+  min-height: 600px;
+  padding: 30px 20px;
+  border-radius: 20px;
+
+  /* Glassmorphism background */
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+
+  /* Gradient border */
+  border: 2px solid transparent;
+  background-image: 
+    linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)),
+    linear-gradient(135deg, #ff6b6b, #5f27cd, #1dd1a1);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+
+  /* Shadow */
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
+
+  /* Text style */
+  text-align: center;
+  color: #fff;
+
+  /* Smooth hover animation */
+  transition: all 0.4s ease;
+}
+
+.profile_desing2:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.4);
+}
+.btn-close {
+  filter: invert(1); /* white close icon */
+
+}
+
+/* ________profile_desing2________ */
+
+.left_box {
+  width: 25%;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+
+  border: 4px solid transparent;
+  border-radius: 12px;
+
+  /* Background with blur + transparent black */
+  background: 
+    linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),  /* transparent black */
+    
+    linear-gradient(270deg, #ff6b6b, #5f27cd, #1dd1a1) border-box;
+
+  background-size: 200% 200%;
+  animation: move 4s linear infinite;
+
+  /* Blur effect */
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+
+  /* Light effect on border */
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.6);  /* white glow */
+}
+
+@keyframes move {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+ 
+ .input-group-text {
+  border: none !important;
+  background: transparent !important;
+  font-size: 1.2rem;
+  color: green; /* icon ka color */
+}
+
+.form-control {
+  border: none !important;
+  border-bottom: 3px solid #25D366 !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+}
+.form-control:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+.search-input {
+  background: url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/icons/search.svg") no-repeat 150px center;
+  background-size: 18px 18px; /* icon ka size */
+  padding-left: 35px; /* icon ke liye space */
+  color: #25D366;
+}
+
+
+
+
+
+
+.form-select{
+  cursor: pointer;
+}
+
+.right_box {
+  background-color: grey;
+  width: 90%;   /* 20% + 80% = 100% */
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.row {
+  margin: 10px !important;   /* Bootstrap ka row ka margin remove */
+}
+
+[class^="col-"], [class*=" col-"] {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+.thumb-box {
+  width: 120px;         /* fixed width */
+  height: 120px;        /* fixed height */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto; 
+     /* center align */
+}
+
+.thumb-box img {
+  max-width: 80%;
+  max-height: 80%;
+  object-fit: contain;  /* image ko stretch nahi karega */
+}
+.form-check-input {
+  width: 50px;
+  height: 25px;
+  cursor: pointer;
+}
+
+.form-check-input:checked {
+  background-color: #0d6efd; /* Bootstrap primary */
+  border-color: #0d6efd;
+}
+.file2, .file4{
+background-color: #e0e0e0;;
+}
+
+
+
+.left_box {
+  
+}
+
+
+.right_box {
+  background-color: grey;
+  width: 80%;
+  height: 100vh; /* Fix height */
+  overflow-y: auto; /* Vertical scroll */
+  overflow-x: hidden; /* Optional: horizontal scroll disable */
+}
+
+
+    .container-fluid{
+    	display: flex;
+
+    }
+    
+.profile_man {
+  width: 90px;   /* default size */
+  height: 90px;
+  border-radius: 50%;
+  background: #0d6efd; /* optional bg color */
+}
+
+.profile_man i {
+  font-size: 3rem; /* default icon size */
+}
+
+.a1{
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	margin-top: 50px;
+}
+#user{
+	font-size: 40px;
+}
+.line{
+	color: #14b129;
+	width: 100%;
+	height: 4px;
+	background-color: #14b129;
+
+
+}
+.log_out{
+	margin-top: 20px;
+	
+width: 100%;
+height: 40px;
+display: flex;
+align-items: center;
+justify-content: center;
+
+
+}
+
+#str_hading{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+
+#pr_baar,#auto_baar{
+	width: 80%;
+margin-left: 10%;
+}
+#auto_baar{
+	display: none;
+}
+.upload_p {
+  display: none;
+  transition: width 0.4s ease;
+}
+.upload_msg {
+  display: none;
+  text-align: center;
+  color: green;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+
+#mb_hading{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.progress-bar {
+  transition: width 0.5s ease-in-out; /* ✅ Smooth animation */
+}
+
+.thumb{
+	width: 75px;
+	height: 75px;
+}
+.u_icon {
+
+  display: flex;
+  gap: 15px; /* icons ke beech space */
+  font-size: 18px; /* icons ka size */
+}
+
+.u_icon i {
+  cursor: pointer;
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+/* Har icon ka alag color */
+.u_icon .fa-eye {
+  color: #007bff; /* blue */
+}
+.u_icon .fa-trash {
+  color: #dc3545; /* red */
+}
+.u_icon .fa-download {
+  color: #28a745; /* green */
+}
+
+/* Hover effect (thoda zoom aur halka dark shade) */
+.u_icon .fa-eye:hover {
+  color: #0056b3;
+  transform: scale(1.2);
+}
+.u_icon .fa-trash:hover {
+  color: #a71d2a;
+  transform: scale(1.2);
+}
+.u_icon .fa-download:hover {
+  color: #1e7e34;
+  transform: scale(1.2);
+}
+.line_icon{
+
+	width: 100%;
+    margin: 5px auto;
+    border: none;
+    border-top: 4px solid black;
+}
+
+.poster_grup_1{
+  width: 100%;
+  height: 130px;
+  border: 1px solid darkred;
+}
+.poster_grup_2{
+width: 100%;
+  height: 130px;
+  border: 1px solid green;
+}
+.poster_grup_3{
+  width: 100%;
+  height: 130px;
+  border: 1px solid black;
+}
+
+
+
+/* animisian test */
+
+/* Fullscreen background with blur effect */
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.8); /* halka black bg */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+.loading-text {
+  color: white;
+  font-size: 30px;
+  margin-top: 15px;
+  
+  font-weight: bold;
+  letter-spacing: 2px;
+  animation: blink 1.2s infinite; /* blinking effect */
+}
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
+}
+/* Loader design */
+.loadingspinner {
+  --square: 26px;
+  --offset: 30px;
+  --duration: 2.4s;
+  --delay: 0.2s;
+  --timing-function: ease-in-out;
+  --in-duration: 0.4s;
+  --in-delay: 0.1s;
+  --in-timing-function: ease-out;
+  width: calc( 3 * var(--offset) + var(--square));
+  height: calc( 2 * var(--offset) + var(--square));
+  position: relative;
+}
+
+.loadingspinner div {
+  display: inline-block;
+  background: darkorange;
+  border-radius: 2px;
+  width: var(--square);
+  height: var(--square);
+  position: absolute;
+}
+
+/* Animations (same as your code) */
+.loadingspinner #square1 { 
+  left: 0; top: 0; 
+  animation: square1 var(--duration) var(--delay) var(--timing-function) infinite,
+             squarefadein var(--in-duration) calc(1 * var(--in-delay)) var(--in-timing-function) both;
+}
+.loadingspinner #square2 { 
+  left: 0; top: var(--offset); 
+  animation: square2 var(--duration) var(--delay) var(--timing-function) infinite,
+             squarefadein var(--in-duration) calc(1 * var(--in-delay)) var(--in-timing-function) both;
+}
+.loadingspinner #square3 { 
+  left: var(--offset); top: var(--offset); 
+  animation: square3 var(--duration) var(--delay) var(--timing-function) infinite,
+             squarefadein var(--in-duration) calc(2 * var(--in-delay)) var(--in-timing-function) both;
+}
+.loadingspinner #square4 { 
+  left: calc(2 * var(--offset)); top: var(--offset); 
+  animation: square4 var(--duration) var(--delay) var(--timing-function) infinite,
+             squarefadein var(--in-duration) calc(3 * var(--in-delay)) var(--in-timing-function) both;
+}
+.loadingspinner #square5 { 
+  left: calc(3 * var(--offset)); top: var(--offset); 
+  animation: square5 var(--duration) var(--delay) var(--timing-function) infinite,
+             squarefadein var(--in-duration) calc(4 * var(--in-delay)) var(--in-timing-function) both;
+}
+/* .profile_man responsiv  */
+@media (max-width: 768px) {
+  .profile_man {
+    width: 70px;
+    height: 70px;
+  }
+  .profile_man i {
+    font-size: 2.2rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .profile_man {
+    width: 60px;
+    height: 60px;
+  }
+  .profile_man i {
+    font-size: 1.8rem;
+  }
+}
+
+
+/* ---- KEYFRAMES (same as your provided CSS) ---- */
+@keyframes square1 { 
+  0% { left:0; top:0;} 
+  8.3% { left:0; top:var(--offset);} 
+  100% { left:0; top:var(--offset);} 
+}
+@keyframes square2 { 
+  0% { left:0; top:var(--offset);} 
+  8.3% { left:0; top:calc(2*var(--offset));} 
+  16.6% { left:var(--offset); top:calc(2*var(--offset));} 
+  25% { left:var(--offset); top:var(--offset);} 
+  91.6% { left:var(--offset); top:0;} 
+  100% { left:0; top:0;} 
+}
+@keyframes square3 {
+  0%,100% { left:var(--offset); top:var(--offset);} 
+  25% { left:var(--offset); top:0;} 
+  33.3% { left:calc(2*var(--offset)); top:0;} 
+  41.6% { left:calc(2*var(--offset)); top:var(--offset);} 
+  75% { left:calc(2*var(--offset)); top:calc(2*var(--offset));} 
+  83.3% { left:var(--offset); top:calc(2*var(--offset));} 
+  91.6% { left:var(--offset); top:var(--offset);} 
+}
+@keyframes square4 { 
+  0% { left:calc(2*var(--offset)); top:var(--offset);} 
+  41.6% { left:calc(2*var(--offset)); top:calc(2*var(--offset));} 
+  50% { left:calc(3*var(--offset)); top:calc(2*var(--offset));} 
+  58.3% { left:calc(3*var(--offset)); top:var(--offset);} 
+  100% { left:calc(3*var(--offset)); top:var(--offset);} 
+}
+@keyframes square5 { 
+  0% { left:calc(3*var(--offset)); top:var(--offset);} 
+  58.3% { left:calc(3*var(--offset)); top:0;} 
+  66.6% { left:calc(2*var(--offset)); top:0;} 
+  75% { left:calc(2*var(--offset)); top:var(--offset);} 
+  100% { left:calc(2*var(--offset)); top:var(--offset);} 
+}
+@keyframes squarefadein { 
+  0% { transform:scale(0.75); opacity:0;} 
+  100% { transform:scale(1); opacity:1;} 
+}
+
+/* animisian test */
+
+/*________user plaan card ________*/
